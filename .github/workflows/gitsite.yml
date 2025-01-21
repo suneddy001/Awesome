@@ -42,15 +42,6 @@ jobs:
       - name: Install GitSite
         run:
           npm install gitsite-cli -g
-          
-     - name: Ensure template files are available
-       run:
-        # Ensure the book.html template file is present
-        if [ ! -f "path/to/book.html" ]; then
-          echo "book.html template file is missing. Please add it to the repository."
-          exit 1
-        fi
-          
       - name: Build with GitSite
         run:
           # set output dir to '_site' for pages jobs:
