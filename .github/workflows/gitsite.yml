@@ -42,8 +42,6 @@ jobs:
       - name: Install GitSite
         run:
           npm install gitsite-cli -g
-      - name: Install dependencies
-        run: npm install gitsite-cli -g
       - name: Ensure template files are available
         run: |
             # Ensure the book.html template file is present
